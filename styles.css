@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: url("./img/pool.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  padding: 0 20px;
+}
+
+.watch {
+  width: 500px;
+  min-height: 200px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  row-gap: 40px;
+}
+
+@media (max-width: 600px) {
+  .watch {
+    width: 300px;
+  }
+}
+
+.time {
+  font-size: 3rem;
+}
+
+.button-section {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.play-stop,
+.restart {
+  font-size: 1.2rem;
+  height: 40px;
+  border: none;
+  padding: 0 10px;
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.play-stop {
+  background-color: green;
+}
+
+.restart {
+  background-color: red;
+}
